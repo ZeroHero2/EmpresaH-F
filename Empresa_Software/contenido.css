@@ -1,0 +1,427 @@
+/*Tarjetitas*/
+.tarjetitas{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	
+	margin: 40px 0;
+}
+.tarjetitas img {
+	width: 128px;
+	height: 128px;
+	align-content: center;
+}
+.tarjetitas h3{
+	text-align: center;
+	font-size: 30 px;
+	margin: 10 px 0;
+}
+
+.tarjetitas p{
+text-align: center;
+	font-size: 30 px;
+	margin: 10 px 0;	
+}
+
+
+.contenido{
+	margin: auto;
+	font-family: 'Rubik', sans-serif;
+}
+
+h1{ font-size: 30px;
+	text-align: center;
+	}
+p{ font-size: 20px; 
+	text-align: center;
+	}
+h2{
+	font-size: 25;
+	text-align: center;
+	}
+/*Efectos*/
+/**{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: arial;
+}*/
+
+.content-all{
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.content-img{
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-img img{
+    width: 100%;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-1{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: #FFF;
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left: -750px;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-2{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(0,100,255,0.5);
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+    margin-left: -800px;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.content-3{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(0,100,255,0.5);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -800px;
+    margin-top: -500px;
+    -webkit-transition: all 900ms;
+    transition: all 900ms;
+    -webkit-box-shadow: 0px 1px 20px -5px black;
+    box-shadow: 0px 1px 20px -5px black;
+}
+
+.content-4{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    background: rgba(0,100,255,0.5);
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+    margin-left: -850px;
+    margin-top: -500px;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+}
+
+.content-img:hover .content-1{
+    width: 222%;
+    -webkit-transition: all 900ms;
+    transition: all 900ms;
+}
+
+.content-img:hover .content-2{
+    width: 222%;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-img:hover .content-3{
+    width: 222%;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+.content-img:hover .content-4{
+    width: 222%;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+}
+
+.content-img:hover img{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    opacity: 0.8;
+}
+
+.content-txt{
+    position: absolute;
+    top: 0;
+    width: 400px;
+    padding: 10px;
+    z-index: 10;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.content-txt h2{
+    font-size: 30px;
+    opacity: 0;
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-txt p{
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+.content-img:hover h2{
+    opacity: 1;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.content-img:hover p{
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+}
+
+
+/*Aqui empieza el formulario */
+
+#signup {
+    width: 550px;
+    height: 430px;
+    margin: 100px auto 50px auto;
+    padding: 20px;
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 3px;  
+}
+
+#signup::before, 
+#signup::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 2px;
+    right: 2px;
+    top: 0;
+    z-index: -1;
+    background: #fff;
+    border: 1px solid #ccc;         
+}
+
+#signup::after {
+    left: 4px;
+    right: 4px;
+    bottom: -5px;
+    z-index: -2;
+    box-shadow: 0 8px 8px -5px rgba(0,0,0,.3);
+}
+::-webkit-input-placeholder {
+   color: #bbb;
+}
+
+:-moz-placeholder {
+   color: #bbb;
+}                       
+
+.placeholder{
+    color: #bbb; /* polyfill */
+}       
+
+#signup input{
+    margin: 5px 0;
+    padding: 15px;
+    width: 100%;
+    *width: 518px; 
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px; 
+}
+
+#signup input:focus{
+        outline: 0;
+        border-color: #aaa;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .3) inset;
+}       
+
+#signup button{
+    margin: 20px 0 0 0;
+    padding: 15px 8px;          
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid #2493FF;
+    overflow: visible;
+    display: inline-block;
+    color: #fff;
+    font: bold 1.4em arial, helvetica;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.4);         
+    background-color: #2493ff;
+    background-image: linear-gradient(top, rgba(255,255,255,.5), rgba(255,255,255,0)); 
+    transition: background-color .2s ease-out;
+    border-radius: 3px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .3),
+                0 1px 0 rgba(255, 255, 255, .5) inset;                               
+}
+
+#signup button:hover{
+    background-color: #7cbfff;
+        border-color: #7cbfff;
+}
+
+#signup button:active{
+    position: relative;
+    top: 3px;
+    text-shadow: none;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .3) inset;
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+*{margin:0; padding:0;}
+
+body {
+    color: #fffffa;
+} 
+/*Titulos en todas las paginas*/
+h1{
+    color:  #a569bd ;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 35px;
+    margin: auto;
+    padding: 0px;
+}
+h2{
+    color: #ec7063 ;
+    text-align: center;
+    font-family:Franklin Gothic Medium;
+    margin: auto;
+    padding: 10px;
+    font-size: 30px;
+}
+h3{
+    color: #58d68d ;
+    text-align: center;
+    font-family: Book Antiqua;
+    margin: auto;
+    font-size: 25px;
+}
+/*Letra para todas las paginas*/
+p{
+    color:black;
+    font-size: 20px;
+}
+/*Menu de inicio*/
+header {
+    width: 100%;
+    overflow: hidden;
+  /*background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);*/
+    background-image: url(contacto.jpg);
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+/*Seccion del menu de inicio para acomodar imagen*/
+.seccion1{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    overflow: hidden;
+    color:#a569bd;
+    line-height:500;
+}
+.seccion4{
+    width: 90%;
+    width: auto;
+    background-image: url(Diseño.jpg);
+    background-size: 1800px;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    align-content: center;
+    padding: 15px;
+    
+}
+/*Botones del footer*/
+footer a{
+    display:inline-block;
+    color:purple;
+    text-decoration:none;
+    padding:10px 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    line-height:normal;
+    font-size:20px;
+    font-weight:bold
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+    background-color:#f4f6f7 ;
+    border-radius: 15px;
+}
+/*Cuando pasa el mouse en el footer*/
+footer a:hover{
+    background: #f4d03f  ;
+    border-radius:60px;
+}
+/*Ajustar imagen del logo, pagina principal*/
+header .Logo{
+    
+    line-height: 300px;
+    float:left;
+    overflow: auto;
+}
+/*Mandar los botones de navegacion a la derecha*/
+header nav{
+    float: right;
+    line-height: 200px;
+}
+/*Dar estilo a cada boton que es un hipervinculo*/
+header nav a {
+    display:inline-block;
+    color:purple;
+    text-decoration:none;
+    padding:10px 20px;
+    line-height:normal;
+    font-size:20px;
+    font-weight:bold
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+    background-color:#f4f6f7 ;
+    border-radius: 15px;
+}
+
+header nav a:hover {
+    background: #e74c3c;
+    border-radius:60px;
+
+}
+/*Alinear imagen de Inicio*/
+div img.Imag{
+    float: left;
+    margin-right: 15px;
+}

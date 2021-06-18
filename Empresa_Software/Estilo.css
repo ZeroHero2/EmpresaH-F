@@ -1,0 +1,481 @@
+*{margin:0; padding:0;}
+
+body {
+	color: #fffffa;
+} 
+/*Titulos en todas las paginas*/
+h1{
+	color:  #a569bd ;
+	text-align: center;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 35px;
+	margin: auto;
+	padding: 0px;
+}
+h2{
+	color: #ec7063 ;
+	text-align: center;
+	font-family:Franklin Gothic Medium;
+	margin: auto;
+	padding: 10px;
+	font-size: 30px;
+}
+h3{
+	color: #58d68d ;
+	text-align: center;
+	font-family: Book Antiqua;
+	margin: auto;
+	font-size: 25px;
+}
+/*Letra para todas las paginas*/
+p{
+	color:black;
+	font-size: 20px;
+}
+/*Dar estilo a las lista*/
+ ul{
+	color: black;
+	font-size:20px;
+	line-height: .8;
+	padding-left: 15px;
+}
+/*Menu de inicio*/
+header {
+	width: 100%;
+	overflow: hidden;
+  /*background-color: #D9AFD9;
+	background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);*/
+	background-image: url(contacto.jpg);
+	margin-bottom: 20px;
+	height: 200px;
+}
+
+/*Seccion del menu de inicio para acomodar imagen*/
+.seccion1{
+	width: 90%;
+	max-width: 1000px;
+	margin:auto;
+	overflow: hidden;
+	color:#a569bd;
+	line-height:500;
+}
+
+/*Seccion despues del menu de inicio*/
+.seccion3{
+	width: 1300px;
+	height: auto;
+	margin:auto;
+	padding: 0px;
+	overflow: hidden;
+	color: black;
+	font-family:Hoefler Text;
+	white-space: pre-line;
+}
+/*Es el footer*/
+.seccion4{
+	width: 90%;
+	width: auto;
+	background-image: url(Diseño.jpg);
+	background-size: 1800px;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	align-content: center;
+	padding: 15px;
+	
+}
+/*Botones del footer*/
+footer a{
+	display:inline-block;
+	color:purple;
+	text-decoration:none;
+	padding:10px 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+	background-color:#f4f6f7 ;
+	border-radius: 15px;
+}
+/*Cuando pasa el mouse en el footer*/
+footer a:hover{
+	background: #f4d03f  ;
+	border-radius:60px;
+}
+/*Ajustar imagen del logo, pagina principal*/
+header .Logo{
+	
+	line-height: 300px;
+	float:left;
+	overflow: auto;
+}
+/*Mandar los botones de navegacion a la derecha*/
+header nav{
+	float: right;
+	line-height: 200px;
+}
+/*Dar estilo a cada boton que es un hipervinculo*/
+header nav a {
+	display:inline-block;
+	color:purple;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height:normal;
+	font-size:20px;
+	font-weight:bold
+	-webkit-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+	transition:all 500ms ease;
+	background-color:#f4f6f7 ;
+	border-radius: 15px;
+}
+
+header nav a:hover {
+	background: #e74c3c;
+	border-radius:60px;
+
+}
+/*Alinear imagen de Inicio*/
+div img.Imag{
+	float: left;
+  	margin-right: 15px;
+}
+/*Imagen 2 de la parte inicio*/
+div img.Imag2{
+	float: right;
+  	margin-right: 15px;
+  	width: 520px;
+  	height: auto;
+}
+div.texto{
+  width: auto;
+  margin:  auto;
+  background-color:#f2f3f4 ;
+  color: #fff;
+  padding: 15px;
+  white-space: pre-line;
+  font-size: 30px;
+}
+
+/**/
+
+/*Formulario --------------------------------------------------------------------------------*/
+
+/*Mensaje en la parte de contacto */
+.caja{
+	text-align: center;
+	padding: 10px;
+	margin-left:190px ;
+	height: auto;
+	width: 1000px;
+	background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.seccion5{
+	width:1300px;
+	height: auto;
+	background-color: #f4f6f6 ;
+}
+/*Estilo para el titulo del formulario*/
+form h3{
+	 color:#566573 ;
+
+}
+form  {
+		background-color: #FFE53B;
+		background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+		display: inline-block;
+		width: 350px;
+		height: auto;
+		padding: 15px;
+		margin-left: 150px;
+		position: relative;
+}
+.oficina{
+	width: 50%;
+	width: 700px;
+	height: auto;
+	float: right;
+	padding-top: 50px;
+}
+
+/*Estilo para cada input*/
+.elemento{
+	width: 100%;
+	background-color: #f4ecf7 ;
+	padding-top: 5px;
+	border-radius: 5px;
+	border: 2px solid #a569bd ;
+	margin-bottom: 10px;
+	font-family: calibri;
+	font-size: 19px;
+}
+/*Estilo para boton enviar y borrar*/
+form .botones{
+	background-color: #ecf0f1  ;
+	width: 50%;
+	margin-right:50px ;
+	margin-left: 90px;
+	border: none;
+	padding-top:7px ;
+	padding-bottom: 7px;
+	margin-bottom: 10px ;
+
+}
+form .botones:hover{
+	background-color:#aeb6bf;
+	cursor: pointer;
+}
+
+/*Google maps*/
+iframe{
+	width: 700px;
+	height: 350px;
+	margin-left: 60px;
+}
+/*Es la seccion de nosotros --------------------------------------------------------------------------*/
+.seccion2 {
+	width: 1300px;
+	height: auto;
+	margin:auto;
+	padding: 0px;
+	overflow: hidden;
+	color: black;
+	font-family:Hoefler Text;
+	white-space: pre-line;
+	font-size: 10px;
+}
+/*Alinear imagen de Nosotros*/
+div img.impar{
+	float: left;
+  margin-right: 15px;
+}
+
+div img.par{
+	float: right;
+  	margin-right: 15px;
+}
+/*Separacion en Nosotros dividio en 2 para los colores c/u */
+.nosotros1{
+	padding: 5px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	background-color: #08AEEA;
+	background-image: linear-gradient(0deg, #08AEEA 0%, #2AF598 100%);
+}
+.nosotros2{
+	padding: 5px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+	background-color: #FFE53B;
+	background-image: linear-gradient(147deg, #FFE53B 0%, #FF2525 74%);
+}
+/*Dar tamaño a las imagenes en el apartado de Nosotros*/
+.seccion2 img{
+	height: 120px;
+	width: auto;
+}
+.seccion2 img:hover{
+	height: 200px;
+	width: auto;
+	transform: rotate(15deg);
+}
+/*Ajustar texto de nosotros*/
+.centrado{
+	height: 110px;
+	width: auto;	
+	font-size: 20px;
+}
+/*Caja del principio en la seccion Nosotros*/
+.box{
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 20px;
+	font-family:Hoefler Text;
+
+}
+/*Iconos de redes sociales en Nosotros*/
+.iconos{
+	float: right;
+	padding-left: 180px;
+	height: 400px;
+	width: 300px;
+	padding-top: 0px;
+}
+/*Tamaño y direccion de la imagen*/
+.iconos img{
+	padding-bottom: 20px;
+	padding-right: 20px;
+}
+.iconos img:hover{
+		width: 100px ;
+		transform: skew(8deg);
+}
+/*Titulo de las redes sociales*/
+.Ticonos{
+	padding-right: 200px;
+}
+.Mapa{
+	float: left;
+	padding-top: 10px;
+}
+/*Clientes ----------------------------------------------------------------------------------*/
+
+
+.contenedor {
+    max-width: 1200px;
+    margin:50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor_tarjeta {
+    margin: 20px;
+}
+
+.contenedor_tarjeta:hover figure {
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+    box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+}
+
+.contenedor_tarjeta:hover figure img {
+    /* Si queremos podemos aplicar un efecto blur a nuestra imagen al girar */
+    /*filter:blur(2px);*/
+}
+
+figure {
+    width: 300px;
+    height: 350px;
+    margin:0;
+    position: relative;
+    transition: all ease .5s;
+    transform-style: preserve-3d;
+    /* Nota:
+        Establecemos que la imagen tendra una rotacion de 0grados al inicio porque si no
+        ponemos esta propiedad nos da un poco de problemas en algunos navegadores al pasar el cursor.
+    */
+    transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+
+figure .frontal {
+    display: block;
+    background: #000;
+
+    /* Podemos ocultar la imagen al da la vuelta si lo queremos */
+    /*backface-visibility: hidden;*/
+}
+
+figure .trasera {
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    color: #fff;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+}
+
+.contenedor_tarjeta:nth-child(1) figure .trasera{
+    background: rgba(223,234,241,0.7);
+    background: -moz-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(223,234,241,0.7)), color-stop(100%, rgba(15,99,144,1)));
+    background: -webkit-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -o-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: -ms-linear-gradient(top, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    background: linear-gradient(to bottom, rgba(223,234,241,0.7) 0%, rgba(15,99,144,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(2) figure .trasera{
+    background: rgba(251,232,202,0.7);
+    background: -moz-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(251,232,202,0.7)), color-stop(100%, rgba(25,44,72,1)));
+    background: -webkit-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -o-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: -ms-linear-gradient(top, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    background: linear-gradient(to bottom, rgba(251,232,202,0.7) 0%, rgba(25,44,72,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbe8ca', endColorstr='#192c48', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(3) figure .trasera{
+    background: rgba(95,58,53,0.7);
+    background: -moz-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95,58,53,0.7)), color-stop(100%, rgba(221,32,47,1)));
+    background: -webkit-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -o-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -ms-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: linear-gradient(to bottom, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(4) figure .trasera{
+    background: rgba(95,58,53,0.7);
+    background: -moz-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95,58,53,0.7)), color-stop(100%, rgba(221,32,47,1)));
+    background: -webkit-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -o-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -ms-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: linear-gradient(to bottom, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
+}
+
+.contenedor_tarjeta:nth-child(5) figure .trasera{
+    background: rgba(95,58,53,0.7);
+    background: -moz-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(95,58,53,0.7)), color-stop(100%, rgba(221,32,47,1)));
+    background: -webkit-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -o-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: -ms-linear-gradient(top, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    background: linear-gradient(to bottom, rgba(95,58,53,0.7) 0%, rgba(221,32,47,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f3a35', endColorstr='#dd202f', GradientType=0 );
+}
+figure .trasera .titulo {
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+
+figure .trasera hr {
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-bottom: 20px;
+    opacity: .5;
+}
+
+figure .trasera p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 992px) { 
+    figure .trasera {
+        /*position: relative;*/
+        backface-visibility:visible;
+        transform: perspective(600px) rotateY(0deg);
+    }
+
+    .contenedor_tarjeta:hover figure {
+        transform: perspective(600px) rotateY(0deg);    
+    }
+
+}
