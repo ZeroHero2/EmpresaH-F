@@ -69,7 +69,9 @@ footer img:hover{
 	margin-right: auto;
 }
 /*COSAS GENERALES ------------------------------------------------------------*/
-
+*{
+	padding: 0;
+}
 h1{
 	text-align: center;
 	margin-top: 10px;
@@ -87,12 +89,16 @@ p{
 	font-size: 19px;
 	font-family: 'Roboto', sans-serif;
 }
+/*Inicio-------------------------------------------------------------------------------*/
+
+
 /*Servicios---------------------------------------------------------------------------------------------*/
 .seccion{
 	margin-right: 25px;
 	margin-left:25px ;
 	font-size: 20px;
 }
+
 /*El padre de mis tarjetas lo hace responsivo*/
 .padre{
 	display: flex;
@@ -103,21 +109,20 @@ p{
 }
 /*Dar formato a las tarjetas de los servicios*/
 .contenedor{
-	width: 400px;
+	width: 370px;
 	height: 530px;
-	background: #50C9C3;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	margin: 10px;
+	background-color: #f4f8fa;
+	margin: 10px 10px 10px 10px;
 	display: flex;
 	flex-direction: column;
-}
+	}
 /*Ajustar la imagen al centro*/
 .contenedor img{
-	height: 50%;
-	width: 340px;
+	height: 230px;
+	width: 300px;
 	margin: 15px 5px 10px 25px;
-}
+	}
+
 /*Justificar el texto de las tarjetas*/
 .contenedor p{
 	text-align: justify;
@@ -166,7 +171,8 @@ background: linear-gradient(to right, #96DEDA, #50C9C3); /* W3C, IE 10+/ Edge, F
 	margin:auto;
 	margin-top: 15px;
 
-}
+	}
+
 /*Justificar el texto de las tarjetas*/
 .contenedor2 p{
 	text-align: justify;
