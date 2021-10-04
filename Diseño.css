@@ -23,10 +23,24 @@ header{
 	margin-left:60px;
 }
 /*Ajusta el tamaño del logo*/
+.lineas{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: flex-end;
+	margin-right: 15px;
+	display: none;
+}
 .menu{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+}
+.Pmenu{
+	display: flex;
+	margin-right: 35px;
+	width: 10px;
+	justify-content: space-around;
 }
 /*Espaciado del header*/
 
@@ -94,6 +108,9 @@ background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, F
 	.boton{
 		margin: 0 10px;
 		border: 1px solid black;
+	}
+	.lineas{
+		display: block;
 	}
 }
 /*FINAL DE LA PAGINA (FOOTER) --------------------------------------------------------------------*/
