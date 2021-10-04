@@ -1,24 +1,35 @@
 body{
 	height: auto;
 	width: 100%;
-
+	padding: 0;
+	margin: 0;
 }
 /*-----------------------------------------------------------------------------------------*/
 /*INICIO DEL BANNER */
 /*Tamaño y posicion del logo de la empresa*/
+/*Barra de navegacion (botones)*/
+header{
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	width: 100%;
+}
+.logo{
+	width: 150px;
+	height: auto;
+}
 .logo img{
 	width: 120px;
 	margin-left:60px;
 }
-/*Barra de navegacion (botones)*/
-nav{
+/*Ajusta el tamaño del logo*/
+.menu{
+	width: 100%;
 	display: flex;
-	flex-wrap: wrap;
+	justify-content: space-between;
 }
 /*Espaciado del header*/
-header{
-	margin:20px 25px 0 25px ;
-}
+
 /*Ajuste y estilo de cada boton*/
 .boton{
 	width: auto;
@@ -41,7 +52,50 @@ background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, F
 	text-decoration: underline;
 
 }
-
+/*Propiedades previas al menu responsivo ---------------------------------------------*/
+#btn-menu{
+	display: none;
+}
+/*Icono que aparece en la pantalla cuando es pequeña*/
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+header label:hover{
+	cursor: pointer;
+	background: #FF4E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*Menu responsive ----------------------------------------------------------------*/
+@media all and (max-width: 700px){
+	nav {
+		flex-flow: column ;
+		margin-left: -200%;
+		transition: all 0.5s;
+		position: absolute;
+		
+	}
+	header label{
+		display: block;
+	}
+	#btn-menu:checked ~ .menu {
+		margin: 0;
+		margin-top: 60px;
+	}
+	.logo img{
+		display: none;
+	}
+	.boton{
+		margin: 0 10px;
+		border: 1px solid black;
+	}
+}
 /*FINAL DE LA PAGINA (FOOTER) --------------------------------------------------------------------*/
 /*Pie de pagina*/
 footer{
@@ -87,18 +141,76 @@ h3{
 	font-size: 24px;
 }
 p{
-	font-size: 22px;
+	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 }
 /*Inicio-------------------------------------------------------------------------------*/
-
+	/*Tarjeta de los productos y servicios Pagina principal*/
+	.inicio{
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+		justify-content: center;
+	}
+	/*Ajustar el tamaño y espacio de las imagenes en las tarjetas*/
+	.inicio img{
+		width: 250px;
+		height: 180px;
+		padding: 10px;
+	}
+	/*Colocar en cada div de mi imagen una transicion de 1s*/
+	.division{
+			width: 250px;
+			display: flex;
+			flex-direction: column;
+			padding: 0 5px;
+			transition: width 1s ease-out;
+	}
+	/*Hacer el efecto de la transcion cuando pase el mouse*/
+	.division:hover{
+		width: 280px;
+		border: 1px solid blue;
+	}
+	div .division{
+			display: flex;
+			flex-direction: column;
+	}
+	/*Tarjetas de las marcas con las que trabajamos*/
+	.marcas{
+		display: flex;
+		flex-flow: row wrap;
+		width: 100%;
+		justify-content: center;
+	}
+	/*Ajustar tamaño de las imagenes de la seccion marcas*/
+	.marcas img{
+		width: 200px;
+		height: 120px;
+		padding: 10px;
+	}
+	/*Propiedades del boton */
+	.boton3{
+		width: 70px;
+		height: auto;
+		border-radius: 10px;
+		padding: 4px 10px;
+		display: flex;
+		margin-left: auto;
+		margin-right:20px ;
+		font-size: 20px;
+	}
+	/*Efectos del boton*/
+	.boton3:hover{
+		background-color: #fbf87e;
+		background-image: linear-gradient(62deg, #fbf87e 0%, #fbab7e 100%);
+		text-decoration: underline;
+	}
+	/*Quita la linea debajo del link del boton*/
+	.boton3 a{
+		text-decoration: none;
+	}
 
 /*Servicios---------------------------------------------------------------------------------------------*/
-.seccion{
-	margin-right: 25px;
-	margin-left:25px ;
-	font-size: 20px;
-}
 
 /*El padre de mis tarjetas lo hace responsivo*/
 .padre{
@@ -111,9 +223,9 @@ p{
 /*Dar formato a las tarjetas de los servicios*/
 .contenedor{
 	width: 370px;
-	height: 530px;
+	height: 560px;
 	background-color: #f4f8fa;
-	margin: 10px 10px 10px 10px;
+	margin: 15px 10px 10px 15px;
 	display: flex;
 	flex-direction: column;
 	}
@@ -190,7 +302,7 @@ p{
 }
 /*Complemento de la caja de texto*/
 .complemento{
-	width: 350px;
+	width: 450px;
 	height: auto;
 	background-color: royalblue;
 	display: flex;
@@ -203,7 +315,7 @@ p{
 }
 /*Ajustar formulario y darle color gradiente */
 form{
-	width: 380px;
+	width: 480px;
 	height: auto;
 	background-color: #f9bb41;
 	background-image: linear-gradient(43deg, #f9bb41 0%, #505dc8 46%, #f9bb41 100%);
@@ -239,7 +351,7 @@ form .texto{
 	height: 80px;
 	width: auto;
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 	justify-content: center;
 }
 .imagenes img{
