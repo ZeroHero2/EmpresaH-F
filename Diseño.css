@@ -22,26 +22,13 @@ header{
 	width: 120px;
 	margin-left:60px;
 }
-/*Ajusta el tamaño del logo*/
-.lineas{
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	justify-content: flex-end;
-	margin-right: 15px;
-	display: none;
-}
+
 .menu{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
-.Pmenu{
-	display: flex;
-	margin-right: 35px;
-	width: 10px;
-	justify-content: space-around;
-}
+
 /*Espaciado del header*/
 
 /*Ajuste y estilo de cada boton*/
