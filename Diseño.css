@@ -87,7 +87,7 @@ footer{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: center;
+	justify-content: flex-end;
 }
 /*Los elementos li estan en bloque de linea */
 .imagenes1 li{
