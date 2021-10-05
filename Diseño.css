@@ -452,4 +452,12 @@ background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, F
 	width: 250px;
 	margin-top: auto;
 	}
+	/*Ajusar imagenes de contacto para que sean mas pequeñas*/
+	.imagenes li{
+	display: inline-block;
+	margin: 0 10px;
+	width: 50px;
+	height: 80px;
+	text-align: center;
+}
 }
