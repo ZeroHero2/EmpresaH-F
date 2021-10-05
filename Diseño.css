@@ -1,3 +1,21 @@
+/*COSAS GENERALES ------------------------------------------------------------*/
+h1{
+	text-align: center;
+	margin-top: 10px;
+	font-size: 48px;
+}
+h2{
+	text-align: center;
+	font-size: 36px;
+}
+h3{
+	text-align: center;
+	font-size: 24px;
+}
+p{
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+}
 body{
 	height: auto;
 	width: 100%;
@@ -6,7 +24,6 @@ body{
 }
 /*-----------------------------------------------------------------------------------------*/
 /*INICIO DEL BANNER */
-/*Tamaño y posicion del logo de la empresa*/
 /*Barra de navegacion (botones)*/
 header{
 	display: flex;
@@ -14,23 +31,22 @@ header{
 	flex-direction: row;
 	width: 100%;
 }
+/*Establecer una caja donde coloco el logo*/
 .logo{
 	width: 150px;
 	height: auto;
 }
+/*Ajustar el tamaño del logo separado de la izquierda*/
 .logo img{
 	width: 120px;
 	margin-left:60px;
 }
-
+/*Hacer una caja flexible para los botones de navegacion*/
 .menu{
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
-
-/*Espaciado del header*/
-
 /*Ajuste y estilo de cada boton*/
 .boton{
 	width: auto;
@@ -53,147 +69,124 @@ background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, F
 	text-decoration: underline;
 
 }
-/*Propiedades previas al menu responsivo ---------------------------------------------*/
-#btn-menu{
-	display: none;
-}
-/*Icono que aparece en la pantalla cuando es pequeña*/
-header label{
-	display: none;
-	width: 30px;
-	height: 30px;
-	padding: 5px;
-	margin-left: auto;
-	margin-top: 10px;
-	margin-right: 10px;
-}
-header label:hover{
-	cursor: pointer;
-	background: #FF4E50;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-/*Menu responsive ----------------------------------------------------------------*/
-@media all and (max-width: 700px){
-	nav {
-		flex-flow: column ;
-		margin-left: -200%;
-		transition: all 0.5s;
-		position: absolute;
-		
-	}
-	header label{
-		display: block;
-	}
-	#btn-menu:checked ~ .menu {
-		margin: 0;
-		margin-top: 60px;
-	}
-	.logo img{
-		display: none;
-	}
-	.boton{
-		margin: 0 10px;
-		border: 1px solid black;
-	}
-	.lineas{
-		display: block;
-	}
-}
 /*FINAL DE LA PAGINA (FOOTER) --------------------------------------------------------------------*/
 /*Pie de pagina*/
 footer{
 	height: 80px;
 	width: 100%;
-	margin: 15px 0 0 0;
+	margin: 25px 0 0 0;
 	display: flex;
-	justify-content: flex-end;
+	flex-direction: row;
 	flex-wrap: nowrap;
 	background-color:  #f4f7f6 ;
 	position: absolute;
 }
-
-/*Modificar las imagenes de nuestro pie de pagina*/
-.pie img{
-	width: auto;
-	height: 40px;
-	padding: 10px 20px 0 20px;
+.imagenes1{
+	height: 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
 }
-footer img:hover{
-	color: burlywood;
-	height: 45px;
+/*Los elementos li estan en bloque de linea */
+.imagenes1 li{
+	display: inline-block;
+	margin: 0 10px;
+	width: 60px;
+	height: 50px;
+	text-align: center;
+}
+.imagenes1 li a{
+	display: block;
+	padding: 0 5px;
+	background-color: white;
+	color: black;
+	line-height: 50px;
+	font-size: 40px;
+	transition: 1s;
+}
+/*Toda la caja del incono se mueve para arriba en 1s*/
+.imagenes1 li a:hover{
+	transform: translateY(-10px);
+}
+/*Dar color al fondo pasando el mouse*/
+.imagenes1 ul li .face:hover{
+	color: white;
+	background-color: #139dec;
+background-image: linear-gradient(160deg, #139dec 0%, #70bef7 100%);
+}
+/*Dar color al fondo pasando el mouse*/
+.imagenes1 ul li .whats:hover{
+	color: white;
+	background-color: limegreen;
+}
+/*Dar color al fondo pasando el mouse*/
+.imagenes1 ul li .insta:hover{
+	color: white;
+	background-color: #e2b728;
+background-image: linear-gradient(28deg, #e2b728 0%, #f02f88 46%, #c749f2 100%);
+}
+/*Quitar la linea inferior de cada enlace*/
+.imagenes1 a{
+	text-decoration: none;
 }
 .item1{
-	margin-top: auto;
-	margin-right: auto;
-}
-/*COSAS GENERALES ------------------------------------------------------------*/
-*{
-	padding: 0;
-}
-h1{
-	text-align: center;
-	margin-top: 10px;
-	font-size: 48px;
-}
-h2{
-	text-align: center;
-	font-size: 36px;
-}
-h3{
-	text-align: center;
-	font-size: 24px;
-}
-p{
 	font-size: 20px;
-	font-family: 'Roboto', sans-serif;
+	margin-right: auto;
+	flex-direction: row;
+	width: 400px;
+	margin-top: auto;
+	margin-left: 10px;
 }
-/*Inicio-------------------------------------------------------------------------------*/
-	/*Tarjeta de los productos y servicios Pagina principal*/
-	.inicio{
+
+/*Inicio--------------------------------------------------------------------------------------*/
+/*Tarjeta de los productos y servicios Pagina principal*/
+.inicio{
 		display: flex;
 		flex-flow: row wrap;
 		width: 100%;
 		justify-content: center;
 	}
-	/*Ajustar el tamaño y espacio de las imagenes en las tarjetas*/
-	.inicio img{
+/*Ajustar el tamaño y espacio de las imagenes en las tarjetas*/
+.inicio img{
 		width: 250px;
 		height: 180px;
 		padding: 10px;
 	}
-	/*Colocar en cada div de mi imagen una transicion de 1s*/
-	.division{
+/*Colocar en cada div de mi imagen una transicion de 1s*/
+.division{
 			width: 250px;
 			display: flex;
 			flex-direction: column;
 			padding: 0 5px;
 			transition: width 1s ease-out;
 	}
-	/*Hacer el efecto de la transcion cuando pase el mouse*/
-	.division:hover{
+/*Hacer el efecto de la transcion cuando pase el mouse*/
+.division:hover{
 		width: 280px;
 		border: 1px solid blue;
 	}
-	div .division{
+/*Hacer una columna para mi imagen y el texto debajo de ella*/
+div .division{
 			display: flex;
 			flex-direction: column;
 	}
-	/*Tarjetas de las marcas con las que trabajamos*/
-	.marcas{
+/*Tarjetas de las marcas con las que trabajamos*/
+.marcas{
 		display: flex;
 		flex-flow: row wrap;
 		width: 100%;
 		justify-content: center;
 	}
-	/*Ajustar tamaño de las imagenes de la seccion marcas*/
-	.marcas img{
+/*Ajustar tamaño de las imagenes de la seccion marcas*/
+.marcas img{
 		width: 200px;
 		height: 120px;
 		padding: 10px;
 	}
-	/*Propiedades del boton */
-	.boton3{
+/*Propiedades del boton */
+.boton3{
 		width: 70px;
 		height: auto;
 		border-radius: 10px;
@@ -203,14 +196,14 @@ p{
 		margin-right:20px ;
 		font-size: 20px;
 	}
-	/*Efectos del boton*/
-	.boton3:hover{
+/*Efectos del boton*/
+.boton3:hover{
 		background-color: #fbf87e;
 		background-image: linear-gradient(62deg, #fbf87e 0%, #fbab7e 100%);
 		text-decoration: underline;
 	}
-	/*Quita la linea debajo del link del boton*/
-	.boton3 a{
+/*Quita la linea debajo del link del boton*/
+.boton3 a{
 		text-decoration: none;
 	}
 
@@ -258,6 +251,7 @@ p{
 	text-decoration: none;
 	font-size: 18px;
 }
+/*Efecto del botn ver mas */
 .Mas:hover{
 	color: blue;
 	text-decoration: underline;
@@ -308,7 +302,7 @@ p{
 .complemento{
 	width: 450px;
 	height: auto;
-	background-color: royalblue;
+	background-color:  #ec7063 ;
 	display: flex;
 	margin: 15px 0 15px 0;
 }
@@ -332,6 +326,7 @@ form .texto{
 	width: 60%;
 	height: 25px;
 	border-radius: 5px;
+	font-size: 20px;
 }
 /*Dar efecto a los botones del formulario */
 .boton1{
@@ -350,18 +345,111 @@ form .texto{
 .boton1:hover{
  background: #FF4E50;
 }
-/*Ajustar la parte de la imagenes de redes sociales*/
+/*Ajustar la caja de la imagenes de redes sociales*/
 .imagenes{
-	height: 80px;
+	height: 50px;
 	width: auto;
 	display: flex;
 	flex-wrap: nowrap;
+	flex-direction: row;
 	justify-content: center;
 }
-.imagenes img{
-	height: 60px;
-	padding: 5px 25px 5px 25px;
+/*Los elementos li estan en bloque de linea (caja de cada icono) */
+.imagenes li{
+	display: inline-block;
+	margin: 0 10px;
+	width: 100px;
+	height: 80px;
+	text-align: center;
 }
-.imagenes img:hover{
-	height: 65px;
+/*Dar color al icono y a su caja */
+.imagenes li a{
+	display: block;
+	padding: 5px 5px;
+	background-color: white;
+	color: black;
+	line-height: 50px;
+	font-size: 40px;
+	transition: 1s;
+}
+/*Toda la caja del incono se mueve para arriba en 1s*/
+.imagenes li a:hover{
+	transform: translateY(-10px);
+}
+/*Dar color al fondo pasando el mouse*/
+.imagenes ul li .face:hover{
+	color: white;
+	background-color: #139dec;
+background-image: linear-gradient(160deg, #139dec 0%, #70bef7 100%);
+}
+/*Dar color al fondo pasando el mouse*/
+.imagenes ul li .whats:hover{
+	color: white;
+	background-color: limegreen;
+}
+/*Dar color al fondo pasando el mouse*/
+.imagenes ul li .insta:hover{
+	color: white;
+	background-color: #e2b728;
+background-image: linear-gradient(28deg, #e2b728 0%, #f02f88 46%, #c749f2 100%);
+}
+/*Quitar la linea inferior de cada enlace*/
+.imagenes a{
+	text-decoration: none;
+}
+
+
+
+/*Propiedades previas al menu responsivo ----------------------------------------------------------*/
+#btn-menu{
+	display: none;
+}
+/*Icono que aparece en la pantalla cuando es pequeña*/
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 5px;
+	margin-left: auto;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+header label:hover{
+	cursor: pointer;
+	background: #FF4E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F9D423, #FF4E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/*Media ------------------------------------------------------------------------------------------*/
+/*Menu responsive -----------------------*/
+@media all and (max-width: 700px){
+	nav {
+		flex-flow: column ;
+		margin-left: -200%;
+		transition: all 0.5s;
+		position: absolute;
+	}
+	header label{
+		display: block;
+	}
+	#btn-menu:checked ~ .menu {
+		margin: 0;
+		margin-top: 60px;
+	}
+	.logo img{
+		display: none;
+	}
+	.boton{
+		margin: 0 10px;
+		border: 1px solid black;
+	}
+	.lineas{
+		display: block;
+	}
+	.item1{
+	font-size: 10px;
+	margin-right: auto;
+	width: 250px;
+	margin-top: auto;
+	}
 }
