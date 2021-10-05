@@ -87,7 +87,7 @@ footer{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: flex-end;
+	justify-content: center;
 }
 /*Los elementos li estan en bloque de linea */
 .imagenes1 li{
@@ -348,7 +348,7 @@ form .texto{
 /*Ajustar la caja de la imagenes de redes sociales*/
 .imagenes{
 	height: 50px;
-	width: auto;
+	width: 100%;
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: row;
