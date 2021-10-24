@@ -1,6 +1,6 @@
 
 .header {
-  background-color: #6A6262;
+  background-color: #4f5279;  
   width: 100%;
   height: 110px;
   top: 0;
@@ -52,7 +52,7 @@
 
 .nav-menu-link:hover,
 .nav-menu-link_active {
-  background-color: #4C4C4D;
+  background-color: #e2a92e;
   transition: 0.5s;
 }
 
@@ -248,5 +248,10 @@ background-image: linear-gradient(28deg, #e2b728 0%, #f02f88 46%, #c749f2 100%);
   width: 130px;
   height: 90px;
 }
-
+/*Separar las tarjetas de nuestros servicios en index*/
+#servicios-tarjeta1,
+#servicios-tarjeta2,
+#servicios-tarjeta3{
+margin: 15px auto;
+}
 }

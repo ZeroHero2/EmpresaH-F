@@ -121,8 +121,8 @@ margin-top: 200px;
 
 
  .marcas{
-margin-top: 100px;
-margin-bottom: 15px;
+margin-top: 50px;
+margin-bottom: 25px;
 position: relative;
  }
 
@@ -261,7 +261,7 @@ position: relative;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
-	background: #272727;
+	background: #ebe9e9;
 
 }
 
@@ -357,6 +357,8 @@ position: relative;
 #servicios-tarjeta1{
 	background: url("imagenes/inicioser1.jpg") center no-repeat;
 	background-size: cover;
+
+	
 }
 #servicios-tarjeta2{
 	background: url("imagenes/inicioser2.jpg") center no-repeat;
@@ -375,7 +377,7 @@ width: 300px;
 height: 450px;
 overflow: hidden;
 cursor: pointer;
-margin: 0 auto;
+margin: auto;
 }
 
 .servicio-titulo,
