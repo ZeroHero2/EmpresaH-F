@@ -1,0 +1,420 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ /* --------------------Productos------------------- */
+
+
+ .partemarcas{
+margin-top: 200px;
+ }
+
+ .carru_lista{
+ 	display: grid;
+ 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ 	gap: 25px;
+ 	margin-top: 50px;
+ 	z-index: 10;
+ }
+
+  
+
+
+ .carru_lista img{
+	width: auto;
+	height: 120px;
+
+ }
+
+.carru_lista h3{
+ 	font-size: 20px;
+ 	margin: 10px 0px;
+ }
+
+ .carru_lista a{
+ 	padding: 10px 0px;
+ 	color: black;
+
+ }
+
+.producto{
+	position: relative;
+	top: 100px;
+}
+
+.carousel__contenedor {
+	position: relative;
+	width: 90%;
+	margin: auto;
+}
+
+.izquierda,
+.derecha {
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 100px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: black;
+	opacity: 20%;
+	z-index: 15;
+}
+
+.izquierda:hover,
+.derecha:hover {
+	opacity: 50%;
+}
+
+.izquierda {
+	left: 0px;
+}
+
+.derecha {
+	right: 0px;
+}
+
+.carru_lista {
+	overflow: hidden;
+}
+
+.carru_elemento {
+	text-align: center;
+
+}
+
+.carru__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: black;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carru__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carru__indicadores .glider-dot.active {
+	opacity: 1;
+}
+
+.producto a{
+	outline: none;
+}
+
+
+ /* --------------------Marcas------------------- */
+
+
+ .marcas{
+margin-top: 100px;
+margin-bottom: 15px;
+position: relative;
+ }
+
+.marcas img {
+
+	height: 200px;
+	width: auto;
+}
+
+
+ .clist{
+ 	display: grid;
+ 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ 	gap: 25px;
+ 	margin-top: 50px;
+ 	z-index: 10;
+
+ 	
+ }
+
+  
+
+
+ .clist img{
+	width: auto;
+	height: 200px;
+	opacity: 0.6;
+ }
+
+ .clist img:hover{
+ 	opacity: 1;
+ }
+
+
+
+
+
+.ccont {
+	position: relative;
+	width: 90%;
+	margin: auto;
+
+}
+
+.izq,
+.der {
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 100px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: black;
+	opacity: 20%;
+	z-index: 15;
+}
+
+.izq:hover,
+.der:hover {
+	opacity: 50%;
+}
+
+.izq {
+	left: 0px;
+}
+
+.der {
+	right: 0px;
+}
+
+.clist {
+	overflow: hidden;
+}
+
+.cele {
+	text-align: center;
+}
+
+.cele img{
+	opacity: 0.5;
+}
+
+.cele img:hover{
+	opacity: 0.8;
+	transition: .5s;
+}
+
+
+ /* --------------------Marcas------------------- */
+
+
+.redes{
+ display: flex;
+  margin-right: 40px;
+  list-style: none;
+
+}
+
+.redes li{
+	margin: 20px;
+	display: inline;
+}
+
+.redes ul{
+	list-style: none;
+
+}
+
+.morei{
+	margin-top: 30px;
+	margin: auto;
+}
+
+.algo{
+	margin: auto;
+}
+
+
+
+ /* --------------------pie de pagina------------------- */
+
+.redes-footer{
+	width: 100%;
+
+}
+
+.copyright{
+	width: 100%;
+	height: 30px;
+	display: flex;
+	position: absolute;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	background: #272727;
+
+}
+
+.copyright p{
+
+	text-align: center;
+
+}
+
+
+ /* --------------------Formulario------------------- */
+
+.algo{
+	padding: 10px 10px;
+	margin: auto;
+
+}
+
+.contcont {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+
+.cajcont > * {
+    padding: 1em;
+}
+
+.contacto form p{
+	padding: 20px 20px;
+}
+
+.contacto form button,
+.contacto form input,
+.contacto form select,
+.contacto form textarea {
+	width: 100%;
+	padding: .6em;
+	border: none;
+	border-bottom: 1px solid black;
+
+}
+
+
+.contacto form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.contacto form .excep{
+	grid-column: 1 / 3;
+}
+
+.contacto form button{
+	background: blue;
+	border: 0;
+	text-transform: uppercase;
+	padding: 1.em;
+}
+
+.contacto form button:hover,
+.contacto form button:focus{
+	background: red;
+	transition: background-color 1s ease-out;
+
+}
+
+
+
+
+.servi{
+	margin-top: 150px;
+	
+}
+
+.marco{
+	padding: 20px 50px;
+	width: 100%;
+}
+
+
+.Tarjeta{
+	justify-content: center;
+	width: 100%;
+	display:flex;
+	flex-wrap: flex;
+	flex-direction: row;
+	align-content:space-between;
+}
+
+
+#servicios-tarjeta1{
+	background: url("imagenes/inicioser1.jpg") center no-repeat;
+	background-size: cover;
+}
+#servicios-tarjeta2{
+	background: url("imagenes/inicioser2.jpg") center no-repeat;
+	background-size: cover;
+}
+#servicios-tarjeta3{
+	background: url("imagenes/inicioser3.jpg") center no-repeat;
+	background-size: cover;
+}
+
+#servicios-tarjeta1,
+#servicios-tarjeta2,
+#servicios-tarjeta3{
+position: relative;
+width: 300px;
+height: 450px;
+overflow: hidden;
+cursor: pointer;
+margin: 0 auto;
+}
+
+.servicio-titulo,
+.servicio-info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+#servicios-tarjeta1 .servicio-titulo,
+#servicios-tarjeta2 .servicio-titulo,
+#servicios-tarjeta3 .servicio-titulo{
+	align-items: flex-end;
+}
+
+
+#servicios-tarjeta1 .servicio-info,
+#servicios-tarjeta2 .servicio-info,
+#servicios-tarjeta3 .servicio-info{
+	flex-wrap: wrap;
+	flex-direction: column;
+	backdrop-filter: blur(10px);
+	transform: translateY(100%);
+	transition: all 0.7s;
+	text-align: center;
+}
+
+
+#servicios-tarjeta1:hover .servicio-info,
+#servicios-tarjeta2:hover .servicio-info,
+#servicios-tarjeta3:hover .servicio-info{
+	
+	transform: translateY(0);
+
+}
+
+
+
+
