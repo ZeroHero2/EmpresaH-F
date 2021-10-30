@@ -34,6 +34,7 @@ body{
 /*Separar texto y titulo la pantalla*/
 .cuadrado{
 	padding: 20px 45px;
+	text-align: justify;
 	
 }
 /*Separar texto y titulo de Nosotros*/
@@ -53,7 +54,7 @@ footer{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	background-color:  #4f5279 ;
+	background-color:  #263f6a ;
 	position: absolute;
 }
 .imagenes1{
@@ -200,6 +201,7 @@ background-image: linear-gradient(28deg, #e2b728 0%, #f02f88 46%, #c749f2 100%);
 	text-align: justify;
 }
 .contenedor2 h3{
+	padding-bottom: 35px;
 	font-size: 20px;
 }
 /*Tarjetas de las marcas*/

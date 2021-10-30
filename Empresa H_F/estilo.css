@@ -261,12 +261,12 @@ position: relative;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-around;
-	background: #ebe9e9;
+	background: #606061;
 
 }
 
 .copyright p{
-
+	color: white;
 	text-align: center;
 
 }
