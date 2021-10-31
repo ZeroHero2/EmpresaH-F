@@ -69,13 +69,12 @@ margin-top: 200px;
 	text-align: center;
 	background: none;
 	color: black;
-	opacity: 20%;
 	z-index: 15;
 }
 
 .izquierda:hover,
 .derecha:hover {
-	opacity: 50%;
+	opacity: 60%;
 }
 
 .izquierda {
@@ -180,13 +179,12 @@ position: relative;
 	text-align: center;
 	background: none;
 	color: black;
-	opacity: 20%;
 	z-index: 15;
 }
 
 .izq:hover,
 .der:hover {
-	opacity: 50%;
+	opacity: 60%;
 }
 
 .izq {
@@ -220,13 +218,12 @@ position: relative;
 
 .redes{
  display: flex;
-  margin-right: 40px;
+  margin-left: 55px;
   list-style: none;
-
 }
 
 .redes li{
-	margin: 20px;
+	margin: 10px;
 	display: inline;
 }
 
@@ -238,6 +235,10 @@ position: relative;
 .morei{
 	margin-top: 30px;
 	margin: auto;
+}
+
+.morei p{
+	text-align: center;
 }
 
 .algo{
@@ -280,6 +281,9 @@ position: relative;
 
 }
 
+.contenido{
+	background-color: #ecf6fc;
+}
 .contcont {
     max-width: 1170px;
     margin-left: auto;
@@ -317,17 +321,19 @@ position: relative;
 }
 
 .contacto form button{
-	background: blue;
+	background: #A0A0A0;
 	border: 0;
 	text-transform: uppercase;
 	padding: 1.em;
+	
 }
 
 .contacto form button:hover,
 .contacto form button:focus{
-	background: red;
+	background:#707070;
+	color: white;
 	transition: background-color 1s ease-out;
-
+	cursor: pointer;
 }
 
 
@@ -355,17 +361,17 @@ position: relative;
 
 
 #servicios-tarjeta1{
-	background: url("imagenes/inicioser1.jpg") center no-repeat;
+	background: url("imagenes/Ducto.jpeg") center no-repeat;
 	background-size: cover;
 
 	
 }
 #servicios-tarjeta2{
-	background: url("imagenes/inicioser2.jpg") center no-repeat;
+	background: url("imagenes/Acero.jpg") center no-repeat;
 	background-size: cover;
 }
 #servicios-tarjeta3{
-	background: url("imagenes/inicioser3.jpg") center no-repeat;
+	background: url("imagenes/Cocina.jpg") center no-repeat;
 	background-size: cover;
 }
 
@@ -378,6 +384,7 @@ height: 450px;
 overflow: hidden;
 cursor: pointer;
 margin: auto;
+color: white;
 }
 
 .servicio-titulo,
@@ -402,7 +409,8 @@ margin: auto;
 #servicios-tarjeta3 .servicio-info{
 	flex-wrap: wrap;
 	flex-direction: column;
-	backdrop-filter: blur(10px);
+	background: #9E9A9A;
+	color: white;
 	transform: translateY(100%);
 	transition: all 0.7s;
 	text-align: center;

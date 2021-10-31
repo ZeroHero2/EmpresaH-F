@@ -1,6 +1,6 @@
 
 .header {
-  background-color: #263f6a;  
+  background-color: #146EA6;  
   width: 100%;
   height: 110px;
   top: 0;
@@ -52,7 +52,7 @@
 
 .nav-menu-link:hover,
 .nav-menu-link_active {
-  background-color: #606061;
+  background-color: #263f6a;
   transition: 0.5s;
 }
 
@@ -78,8 +78,10 @@
   padding: 0;
  }
 
+
+ /* Margen top para la parte responsiva xd */
 .suavecito{
-  margin-top: 60px;
+  margin-top: 75px;
 }
 
   .header {
@@ -232,26 +234,41 @@ background-image: linear-gradient(28deg, #e2b728 0%, #f02f88 46%, #c749f2 100%);
 	width: 130px;
   height: 90px;
 }
+.contenedor3 img:hover{
+	width: 130px;
+  height: 100px;
+}
 /*Aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
   .imagenes1 li{
   margin: 0 4px;
-  width: 40px;
+  width: 50px;
   height: auto;
 }
-.imagenes li{
- padding: 0 5px;
-  width: 50px;
-  height: 60px;
-}
-/*Aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
-.contenedor3 img{
-  width: 130px;
-  height: 90px;
-}
+
 /*Separar las tarjetas de nuestros servicios en index*/
 #servicios-tarjeta1,
 #servicios-tarjeta2,
 #servicios-tarjeta3{
 margin: 15px auto;
 }
+
+.redes{
+  display: inline;
+  margin-right: auto;
+}
+
+
+.redes{
+  display: flex;
+   margin-right: auto;
+   list-style: none;
+   margin-left: 0;
+ }
+ 
+ .redes li{
+   margin: 10px;
+   display: block;
+ }
+ 
+
 }

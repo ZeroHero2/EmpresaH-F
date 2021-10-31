@@ -38,9 +38,8 @@ body{
 	
 }
 /*Separar texto y titulo de Nosotros*/
-.cuadrado p,
-.cuadrado h1{
-	margin-top: 25px;
+.cuadrado1 p{
+	padding: 20px 45px;
 }
 
 /*-----------------------------------------------------------------------------------------*/
@@ -54,7 +53,7 @@ footer{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	background-color:  #263f6a ;
+	background-color:  #263f6a;
 	position: absolute;
 }
 .imagenes1{
@@ -130,10 +129,16 @@ background-image: linear-gradient(28deg, #e2b728 0%, #f02f88 46%, #c749f2 100%);
 .contenedor{
 	width: 370px;
 	height: 560px;
-	background-color: #f4f8fa;
+	background-color: #bdd3df;
 	margin: 15px 10px 10px 15px;
 	display: flex;
 	flex-direction: column;
+	}
+	.contenedor p{
+		padding: 0 15px;
+	}
+	.contenedor ul{
+		padding: 0 22px;
 	}
 /*Ajustar la imagen al centro*/
 .contenedor img{
@@ -182,7 +187,7 @@ background-image: linear-gradient(28deg, #e2b728 0%, #f02f88 46%, #c749f2 100%);
 .contenedor2{
 	width: 310px;
 	height: 300px;
-	background-color: #f4f8fa; 
+	background-color: #bdd3df; 
 	margin: 15px 10px 15px 10px;
 	display: flex;
 	flex-direction: column;
