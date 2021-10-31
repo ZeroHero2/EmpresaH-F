@@ -1,0 +1,274 @@
+
+.header {
+  background-color: #146EA6;  
+  width: 100%;
+  height: 110px;
+  top: 0;
+  left: 0;
+  margin: 0;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: all;
+  margin: 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo img{
+  width: auto;
+  height: 100px;
+  padding: 0 10px;
+  line-height: 80px;
+
+}
+
+.nav-menu {
+  display: flex;
+  margin-right: 40px;
+  list-style: none;
+}
+
+.nav-menu-item {
+  font-size: 18px;
+  margin: 0 10px;
+  line-height: 100px;
+  text-transform: uppercase;
+  width: max-content;
+  position: relative;
+}
+
+.nav-menu-link {
+  padding: 8px 12px;
+  border-radius: 3px;
+}
+
+.nav-menu-link:hover,
+.nav-menu-link_active {
+  background-color: #263f6a;
+  transition: 0.5s;
+}
+
+/* TOGGLE */
+.nav-toggle {
+  color: white;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+
+  display: none;
+}
+.titulo h3{
+  font-size: 20px;
+}
+/* Parte responsiva */
+@media (max-width: 790px) {
+ 
+ body{
+  padding: 0;
+ }
+
+
+ /* Margen top para la parte responsiva xd */
+.suavecito{
+  margin-top: 75px;
+}
+
+  .header {
+  height: 60px;
+  top: 0;
+  left: 0;
+  margin: 0;
+  position: fixed;
+  z-index: 20;
+  }
+
+  .logo img{
+    width: auto;
+    height: 60px;
+  padding: 0 30px;
+  line-height: 50px;
+
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    background-color: #146EA6;
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    padding: 20 px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.5s;
+    margin: 0;
+    z-index: 30;
+
+  }
+
+  .nav-menu-item {
+    line-height: 70px;
+  }
+
+  .nav-menu-link:hover,
+  .nav-menu-link_active {
+    background: none;
+    color: #757e85;
+    
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+
+  }
+
+  .nav-toggle:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .copyright{
+    width: 100%;
+    height: 50px;
+  }
+  .cele img{
+  opacity: 1;
+  }
+
+
+.item1{
+    font-size: 15px;
+    text-align: center;
+  }
+  .imagenes1 li{
+  margin: 0 8px;
+  width: 30px;
+  height: auto;
+}
+/*Dar color al fondo desde el movil*/
+.imagenes1 ul li .face{
+  color: white;
+  background-color: #139dec;
+background-image: linear-gradient(160deg, #139dec 0%, #70bef7 100%);
+}
+/*Dar color al fondo desde el movil*/
+.imagenes1 ul li .whats{
+  color: white;
+  background-color: limegreen;
+}
+/*Dar color al fondo desde el movil*/
+.imagenes1 ul li .insta{
+  color: white;
+  background-color: #e2b728;
+background-image: linear-gradient(28deg, #e2b728 0%, #f02f88 46%, #c749f2 100%);
+}
+/*Contacto------*/
+/*Los elementos li estan en bloque de linea (caja de cada icono) */
+.imagenes li{
+ padding: 0 10px;
+  width: 60px;
+  height: 60px;
+}
+/*Dar color al fondo pasando el mouse*/
+.imagenes ul li .face{
+  color: white;
+  background-color: #139dec;
+background-image: linear-gradient(160deg, #139dec 0%, #70bef7 100%);
+}
+/*Dar color al fondo pasando el mouse*/
+.imagenes ul li .whats{
+  color: white;
+  background-color: limegreen;
+}
+/*Dar color al fondo pasando el mouse*/
+.imagenes ul li .insta{
+  color: white;
+  background-color: #e2b728;
+background-image: linear-gradient(28deg, #e2b728 0%, #f02f88 46%, #c749f2 100%);
+}
+
+
+.marco{
+	padding: 5%;
+	width: 100%;
+}
+
+.Tarjeta{
+	justify-content: center;
+	width: 100%;
+	display:flex;
+	flex-wrap: flex;
+	flex-direction: column;
+	
+}
+
+
+.contacto form {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.contacto form .excep{
+	grid-column: 1;
+}
+/*Aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
+.contenedor3 img{
+	width: 130px;
+  height: 90px;
+}
+.contenedor3 img:hover{
+	width: 130px;
+  height: 100px;
+}
+/*Aquiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii*/
+  .imagenes1 li{
+  margin: 0 4px;
+  width: 50px;
+  height: auto;
+}
+
+/*Separar las tarjetas de nuestros servicios en index*/
+#servicios-tarjeta1,
+#servicios-tarjeta2,
+#servicios-tarjeta3{
+margin: 15px auto;
+}
+
+.redes{
+  display: inline;
+  margin-right: auto;
+}
+
+
+.redes{
+  display: flex;
+   margin-right: auto;
+   list-style: none;
+   margin-left: 0;
+ }
+ 
+ .redes li{
+   margin: 10px;
+   display: block;
+ }
+ 
+
+}
